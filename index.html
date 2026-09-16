@@ -489,9 +489,13 @@
   <div class="toast" id="xmr-toast" style="opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s;">XMR address copied</div>
 
 <script>
-  // Timer starts from September 16, 2026 at 23:25 GMT and counts down 120 hours
-  const startTime = Date.UTC(2026, 8, 16, 23, 25, 0); // Month is 0-indexed (8 = September)
+  // CACHE BUSTER v2 - Timer starts from September 16, 2026 at 23:30 GMT and counts down 120 hours
+  const startTime = Date.UTC(2026, 8, 16, 23, 30, 0); // Month is 0-indexed (8 = September)
   const endTime = startTime + (120 * 60 * 60 * 1000); // Add 120 hours in milliseconds
+  console.log("Timer script loaded - v2");
+  console.log("Start time:", new Date(startTime).toISOString());
+  console.log("End time:", new Date(endTime).toISOString());
+  console.log("Current time:", new Date().toISOString());
 
   function updateTimer() {
     const timeLeft = endTime - Date.now();

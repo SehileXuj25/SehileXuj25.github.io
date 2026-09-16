@@ -489,8 +489,8 @@
   <div class="toast" id="xmr-toast" style="opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s;">XMR address copied</div>
 
 <script>
-  // Timer starts from September 16, 2026 at 22:10 UTC and counts down 100 hours
-  const startTime = Date.UTC(2026, 8, 16, 22, 10, 0); // Month is 0-indexed (8 = September)
+  // Timer starts from September 17, 2026 at 00:00 GMT and counts down 100 hours
+  const startTime = Date.UTC(2026, 8, 17, 0, 0, 0); // Month is 0-indexed (8 = September)
   const endTime = startTime + (100 * 60 * 60 * 1000); // Add 100 hours in milliseconds
 
   function updateTimer() {
